@@ -38,6 +38,26 @@ public class Magpie3
 		{
 			response = "Why so negative?";
 		}
+        else if (findKeyword(statement, "Mr.") >= 0)
+        {
+            response = "He sounds lke a good teacher.";
+        }
+        else if (findKeyword(statement, "ball") >= 0)
+        {
+            response = "What sport do you play?";
+        }
+        else if (findKeyword(statement, "school") >= 0)
+        {
+            response = "Do you like your classes?";
+        }
+        else if (findKeyword(statement, "friend") >= 0)
+        {
+            response = "What is your friends name?";
+        }
+        else if (findKeyword(statement, "Mrs.") >= 0)
+        {
+            response = "She sounds like a good teacher";
+        }
 		else if (findKeyword(statement, "mother") >= 0
 				|| findKeyword(statement, "father") >= 0
 				|| findKeyword(statement, "sister") >= 0
